@@ -19,6 +19,6 @@ function willSuccess(marks) {
 
 }
 
-const num =[ 90 ] 
+const num =85
 const numbs = willSuccess(num);
 console.log(numbs);
