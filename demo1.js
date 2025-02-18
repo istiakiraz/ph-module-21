@@ -1,16 +1,21 @@
 function validContact(contact) {
-    
-    if (contact.length == 11 && contact[0] == 0 && contact[1] == 1  && !isNaN(contact) ) {
+
+    if(typeof contact === "string"){   
+        
+        console.log(contact.length);
+        if (contact.length == 11 && contact[0] == 0 && contact[1] == 1  && !isNaN(contact) && !contact.includes(" ") ) {
         return true;
     }
-    else if (contact.length !== 1 && contact !== true && contact !== false && typeof contact !== 'number') {
+    else if (contact.length !== 1 && typeof contact !== 'number') {
         return false;
     }
-
-    return "Invalid"
-
+    }
+    
+  
+    return "Invalid";
 
 }
 
-const nums = validContact('0181934567' )
+
+const nums = validContact("01845354545")
 console.log(nums);

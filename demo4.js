@@ -5,7 +5,7 @@ function calculateSleepTime(times) {
 
     let sum = 0;
     for (let i = 0; i < times.length; i++) {
-        if(typeof times[i] !== "number"){
+        if(typeof times[i] !== "number" || times[i] < 0){
             return "Invalid"
         }
         sum = sum + times[i]
@@ -20,6 +20,6 @@ function calculateSleepTime(times) {
     }
     return object;
 }
-const times = [100, 3800, "90" ] 
+const times = [-3800, 25] 
 const time = calculateSleepTime(times);
 console.log(time);

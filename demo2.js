@@ -19,6 +19,6 @@ function willSuccess(marks) {
 
 }
 
-const num =85
+const num = 'uuewe'
 const numbs = willSuccess(num);
 console.log(numbs);
